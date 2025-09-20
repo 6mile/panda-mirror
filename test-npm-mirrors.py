@@ -60,7 +60,7 @@ def main():
         "https://repo.huaweicloud.com/repository/npm/",
         "https://mirrors.cloud.tencent.com/npm/",
         "https://registry.npm.taobao.org/",
-	"https://npm-mirror.gitverse.ru/"
+        "https://npm-mirror.gitverse.ru/"
     ]
 
     print(f"Checking package '{package_name}' across {len(registries)} registries...\n")
