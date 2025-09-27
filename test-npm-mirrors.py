@@ -59,7 +59,7 @@ def main():
         "https://repos.refinery.dev/repository/npm/",
         "https://repo.huaweicloud.com/repository/npm/",
         "https://mirrors.cloud.tencent.com/npm/",
-        "https://registry.npm.taobao.org/",
+	"https://registry.npm.taobao.org/",
         "https://npm-mirror.gitverse.ru/"
     ]
 
@@ -78,6 +78,8 @@ def main():
         else:
             print("No package information found")
         print("-" * 80 + "\n")
+
+        subprocess.run(['npm', 'config', 'set', 'registry', "https://registry.npmjs.org/"],) 
 
 if __name__ == "__main__":
     main()
